@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+	<!ENTITY fabric 'https://fabric.microsoft.com/ontology/9435c88d-f9a8-4e76-b857-cddb3b009a88#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:fabric="https://fabric.microsoft.com/ontology/9435c88d-f9a8-4e76-b857-cddb3b009a88#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:Ontology rdf:about="https://fabric.microsoft.com/ontology/9435c88d-f9a8-4e76-b857-cddb3b009a88">
+    <rdfs:label rdf:datatype="&xsd;string">Ontology_1</rdfs:label>
+  </owl:Ontology>
+  <owl:DatatypeProperty rdf:about="&fabric;City">
+    <rdfs:domain rdf:resource="&fabric;Hospital" />
+    <rdfs:label rdf:datatype="&xsd;string">City</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;CurrentRoomID">
+    <rdfs:domain rdf:resource="&fabric;Patient" />
+    <rdfs:label rdf:datatype="&xsd;string">CurrentRoomID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;CurrentRoomId">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">CurrentRoomId</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="&fabric;Department">
+    <rdfs:label rdf:datatype="&xsd;string">Department</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&fabric;Department%20ID">
+    <rdfs:domain rdf:resource="&fabric;Department" />
+    <rdfs:label rdf:datatype="&xsd;string">Department ID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;DepartmentID">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">DepartmentID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;DepartmentName">
+    <rdfs:domain rdf:resource="&fabric;Department" />
+    <rdfs:label rdf:datatype="&xsd;string">DepartmentName</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Department_Name">
+    <rdfs:domain rdf:resource="&fabric;Department" />
+    <rdfs:label rdf:datatype="&xsd;string">Department_Name</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Department__DepartmentId">
+    <rdfs:domain rdf:resource="&fabric;Department" />
+    <rdfs:label rdf:datatype="&xsd;string">DepartmentId</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+    <ns0:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns0="urn:fabric-internal:">true</ns0:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Department__HospitalID">
+    <rdfs:domain rdf:resource="&fabric;Department" />
+    <rdfs:label rdf:datatype="&xsd;string">HospitalID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+    <ns1:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns1="urn:fabric-internal:">true</ns1:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;EquipementType">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">EquipementType</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;EquipmentId">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">EquipmentId</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Floor">
+    <rdfs:domain rdf:resource="&fabric;Department" />
+    <rdfs:label rdf:datatype="&xsd;string">Floor</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="&fabric;Hospital">
+    <rdfs:label rdf:datatype="&xsd;string">Hospital</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&fabric;HospitalName">
+    <rdfs:domain rdf:resource="&fabric;Hospital" />
+    <rdfs:label rdf:datatype="&xsd;string">HospitalName</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Hospital_Name">
+    <rdfs:domain rdf:resource="&fabric;Hospital" />
+    <rdfs:label rdf:datatype="&xsd;string">Hospital_Name</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Hospital__HospitalID">
+    <rdfs:domain rdf:resource="&fabric;Hospital" />
+    <rdfs:label rdf:datatype="&xsd;string">HospitalID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+    <ns2:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns2="urn:fabric-internal:">true</ns2:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;MonotoringDate">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">MonotoringDate</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;dateTime" />
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="&fabric;Patient">
+    <rdfs:label rdf:datatype="&xsd;string">Patient</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&fabric;PatientId">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">PatientId</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Patient__AdmissionDate">
+    <rdfs:domain rdf:resource="&fabric;Patient" />
+    <rdfs:label rdf:datatype="&xsd;string">AdmissionDate</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;dateTime" />
+    <ns3:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns3="urn:fabric-internal:">true</ns3:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Patient__DateOfBirth">
+    <rdfs:domain rdf:resource="&fabric;Patient" />
+    <rdfs:label rdf:datatype="&xsd;string">DateOfBirth</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;dateTime" />
+    <ns4:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns4="urn:fabric-internal:">true</ns4:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Patient__FirstName">
+    <rdfs:domain rdf:resource="&fabric;Patient" />
+    <rdfs:label rdf:datatype="&xsd;string">FirstName</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns5:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns5="urn:fabric-internal:">true</ns5:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Patient__LastName">
+    <rdfs:domain rdf:resource="&fabric;Patient" />
+    <rdfs:label rdf:datatype="&xsd;string">LastName</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns6:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns6="urn:fabric-internal:">true</ns6:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;Patient__PatientID">
+    <rdfs:domain rdf:resource="&fabric;Patient" />
+    <rdfs:label rdf:datatype="&xsd;string">PatientID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+    <ns7:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns7="urn:fabric-internal:">true</ns7:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;RoomID">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">RoomID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;RoomId">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">RoomId</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;State">
+    <rdfs:domain rdf:resource="&fabric;Hospital" />
+    <rdfs:label rdf:datatype="&xsd;string">State</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;States">
+    <rdfs:domain rdf:resource="&fabric;Hospital" />
+    <rdfs:label rdf:datatype="&xsd;string">States</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="&fabric;VitalSignEquipment">
+    <rdfs:label rdf:datatype="&xsd;string">VitalSignEquipment</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&fabric;VitalSignEquipment__DepartmentId">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">DepartmentId</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+    <ns8:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns8="urn:fabric-internal:">true</ns8:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;VitalSignEquipment__PatientID">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">PatientID</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;integer" />
+    <ns9:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns9="urn:fabric-internal:">true</ns9:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;VitalSignEquipment__RoomNumber">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">RoomNumber</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns10:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns10="urn:fabric-internal:">true</ns10:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;VitalSignEquipment__RoomType">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">RoomType</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns11:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns11="urn:fabric-internal:">true</ns11:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&fabric;assingedID">
+    <rdfs:domain rdf:resource="&fabric;Patient" />
+    <rdfs:label rdf:datatype="&xsd;string">assingedID</rdfs:label>
+    <rdfs:range rdf:resource="&fabric;room" />
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&fabric;contains">
+    <rdfs:domain rdf:resource="&fabric;Hospital" />
+    <rdfs:label rdf:datatype="&xsd;string">contains</rdfs:label>
+    <rdfs:range rdf:resource="&fabric;Department" />
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&fabric;has">
+    <rdfs:domain rdf:resource="&fabric;Department" />
+    <rdfs:label rdf:datatype="&xsd;string">has</rdfs:label>
+    <rdfs:range rdf:resource="&fabric;room" />
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&fabric;monitors">
+    <rdfs:domain rdf:resource="&fabric;VitalSignEquipment" />
+    <rdfs:label rdf:datatype="&xsd;string">monitors</rdfs:label>
+    <rdfs:range rdf:resource="&fabric;Patient" />
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="&fabric;room">
+    <rdfs:label rdf:datatype="&xsd;string">room</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&fabric;room__AdmissionDate">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">AdmissionDate</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;dateTime" />
+    <ns12:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns12="urn:fabric-internal:">true</ns12:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;room__DateOfBirth">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">DateOfBirth</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;dateTime" />
+    <ns13:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns13="urn:fabric-internal:">true</ns13:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;room__FirstName">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">FirstName</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns14:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns14="urn:fabric-internal:">true</ns14:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;room__LastName">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">LastName</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns15:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns15="urn:fabric-internal:">true</ns15:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;room__RoomNumber">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">RoomNumber</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns16:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns16="urn:fabric-internal:">true</ns16:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&fabric;room__RoomType">
+    <rdfs:domain rdf:resource="&fabric;room" />
+    <rdfs:label rdf:datatype="&xsd;string">RoomType</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+    <ns17:qualifiedPropertyName rdf:datatype="&xsd;string" xmlns:ns17="urn:fabric-internal:">true</ns17:qualifiedPropertyName>
+  </owl:DatatypeProperty>
+</rdf:RDF>
